@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+    <title> Les bases HTML/CSS + Push sur GitHub </title>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+
+    <style>
+        /*LES STYLES POUR SAISIR LES ZONES DE TEXTE*/
+        
+        input [text] {
+            width: 200px;
+            /* largeur zone de saisie */
+            position: absolute;
+            /*position fixe absolue, qui ne dépend pas des autres objets*/
+            left: 150px;
+            /* position gauche */
+            font-family: 'Courier New', Courier, monospace;
+            /* famille de police */
+            font-size: 15px;
+            /*taille de caractère */
+            <<<<<<< HEAD border-bottom-style: solid;
+            /* style de bordure */
+            =======<header>Entete</header><nav>Balise Nav - nom Menu</nav><div class="texte">texte </div>>>>>>>>c5af3dcd32e66eeaaf754dc64804f25c1147070c <<<<<<< HEAD border-radius: 30px;
+            /* bordure arrondie*/
+            =======<div>contenu </div>>>>>>>>c5af3dcd32e66eeaaf754dc64804f25c1147070c <<<<<<< HEAD background-color: white;
+            /* fond de la zone de saisie */
+            color: antiquewhite;
+            /* couleur du texte */
+        }
+        /* LES STYLES POUR LES LIBELLES */
+        
+        label {
+            position: absolute;
+            /* position fixe absolue, qui ne dépend pas des autres objets */
+            left: 45px;
+            /* position gauche */
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            /* famille de la police */
+            font-size: 15px;
+            /* taille de la police */
+        }
+        /* LES STYLES POUR LE BOUTONS DE VALIDATION */
+        
+        input[type=submit] {
+            width: 150px;
+            /* largeur */
+            position: absolute;
+            left: 195px;
+            /* position horizontale */
+            top: 240px;
+            /* position verticale */
+            background-color: lightpink;
+            /* couleur fond du bouton */
+            border-radius: 10px;
+            /* bordure arrondie */
+        }
+        /* LES STYLES POUR LES ZONE ARRONDIES GRISES DU FORMULAIRE */
+        
+        div {
+            border-radius: 300px;
+            /* l'arrondi */
+            background-color: #f2f2f2;
+            /* le fond gris */
+            padding: 60px;
+            /* décalage de la zone grisée */
+        }
+    </style>
+    <!-- FIN DU STYLE -->
+
+    <h2> Renseignez les champs ci-dessous:</h2>
+    <p></p>
+
+    <div>
+        <form action="reponse.php">
+            <label> Nom: </label>
+            <input type="text" placeholder="Tapez votre nom ici" maxlength="30" autofocus>
+            <br> <br>
+
+            <label> Ville </label>
+            <input type="text" placeholder="Tapez votre ville ici" maxlength="30">
+            <br> <br>
+
+            <label> Code postal </label>
+            <input type="text" placeholder="Tapez 4 chiffres" maxlength="4" pattern="[0-9] {4}" required>
+            <br> <br>
+
+            <input type="submit" value="Validation">
+        </form>
+    </div>
+
+
+</body>
+
+</html>
